@@ -27,7 +27,7 @@ function Hero() {
                     <button className={`border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
                     flex justify-center items-center gap-1 ${theme === "light" ? "bg-[#FFFFFF] border-[#3730A3]" : "bg-[#383838] border-[#E1E1FF]"}`}>
                         <img fill="#3730A3" className={`w-6 h-6 ${theme === "light" ? "filter-logo-filter-light" : "filter-logo-filter-dark"}`} src="../../assets/github-mark.svg" />
-                        <img className={`w-15 h-7 ${theme === "light" ? "filter-text-filter-light" : "filter-text-filter-dark"}`} src="../../assets/GitHub_Logo.svg" />
+                        <p className={` ${theme === "light" ? "bg-[#FFFFFF] text-[#3730A3]" : "bg-[#383838] text-[#E1E1FF] "}`}>Github</p>
                     </button>
                     <button className={`border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
                     flex justify-center items-center gap-1 ${theme === "light" ? "bg-[#FFFFFF] border-[#3730A3]" : "bg-[#383838] border-[#E1E1FF]"}`}>
