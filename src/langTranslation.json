@@ -1,0 +1,24 @@
+{
+    "tr": {
+        "buttonText": {
+            "firstPart": "İNGİLİZCE",
+            "secondPart": "'YE GEÇ"
+        },
+        "skills": "Yetenekler",
+        "projects": "Projeler",
+        "hireMe": "Beni işe al",
+        "heroh1": "Yaratıcı Düşünür Minimalizm Aşığı",
+        "heroh2": "Merhaba ben Melih. Ben full-stack bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir frontend ürünleri üretecek bir geliştirici arıyorsanız, tanışalım!"
+    },
+    "en": {
+        "buttonText": {
+            "firstPart": "TÜRKÇE",
+            "secondPart": "'YE GEÇ"
+        },
+        "skills": "Skills",
+        "projects": "Projects",
+        "hireMe": "Hire me",
+        "heroh1": "Creative thinker Minimalism lover",
+        "heroh2": "Hi, I’m Melih. I’m a full-stack developer. If you are looking for a developer who to craft solid and scalable frontend products with great user experiences, let’s meet!"
+    }
+}
