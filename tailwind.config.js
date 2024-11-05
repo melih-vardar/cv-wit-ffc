@@ -10,8 +10,16 @@ export default {
     fontFamily: {
       'Inter': 'Inter'
     },
-    extend: {},
+    extend: {
+      filter: {
+        'logo-filter-light': 'invert(19%) sepia(87%) saturate(2527%) hue-rotate(238deg) brightness(74%) contrast(96%)',
+        'logo-filter-dark': 'invert(77%) sepia(10%) saturate(1027%) hue-rotate(208deg) brightness(94%) contrast(93%)',
+        'text-filter-dark': 'invert(92%) sepia(77%) saturate(5838%) hue-rotate(180deg) brightness(103%) contrast(101%)',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }
 

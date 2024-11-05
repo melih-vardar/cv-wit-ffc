@@ -7,3 +7,8 @@
   background-color: #FFFFFF;
   color: black;
 }
+
+.custom-filter-light {
+  @apply filter;
+  filter: invert(19%) sepia(87%) saturate(2527%) hue-rotate(238deg) brightness(74%) contrast(96%);
+}
