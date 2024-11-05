@@ -26,12 +26,12 @@ function Hero() {
                         ${theme === "light" ? "bg-[#3730A3] text-[#FFFFFF] border-[#3730A3]" : "bg-[#E1E1FF] text-[#000000] border-[#E1E1FF]"}`}>{translate("hireMe")}</button>
                     <button className={`border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
                     flex justify-center items-center gap-1 ${theme === "light" ? "bg-[#FFFFFF] border-[#3730A3]" : "bg-[#383838] border-[#E1E1FF]"}`}>
-                        <img fill="#3730A3" className={`w-6 h-6 ${theme === "light" ? "filter-logo-filter-light" : "filter-logo-filter-dark"}`} src="../../assets/github-mark.svg" />
+                        <img className={`w-6 h-6 ${theme === "light" ? "filter-logo-filter-light" : "filter-logo-filter-dark"}`} src="../../assets/github-mark.svg" />
                         <p className={` ${theme === "light" ? "bg-[#FFFFFF] text-[#3730A3]" : "bg-[#383838] text-[#E1E1FF] "}`}>Github</p>
                     </button>
                     <button className={`border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
                     flex justify-center items-center gap-1 ${theme === "light" ? "bg-[#FFFFFF] border-[#3730A3]" : "bg-[#383838] border-[#E1E1FF]"}`}>
-                        <img fill="#3730A3" className={`w-6 h-6 ${theme === "light" ? "filter-logo-filter-light" : "filter-logo-filter-dark"}`} src="../../assets/LI-In-Bug.svg" />
+                        <img className={`w-6 h-6 ${theme === "light" ? "filter-logo-filter-light" : "filter-logo-filter-dark"}`} src="../../assets/LI-In-Bug.svg" />
                         <p className={` ${theme === "light" ? "bg-[#FFFFFF] text-[#3730A3]" : "bg-[#383838] text-[#E1E1FF] "}`}>Linkedin</p>
                     </button>
                 </div>
