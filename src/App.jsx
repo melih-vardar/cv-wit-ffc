@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import './App.css'
 import Footer from './components/Footer'
-import Header from './components/header'
+import Header from './components/Header'
 import Hero from './components/Hero'
 import ModeSwitch from './components/ModeSwitch'
 import Profile from './components/Profile'
