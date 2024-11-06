@@ -14,7 +14,7 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`flex justify-center ${theme === 'light' ? 'lightMode' : 'darkMode'}`}>
+    <div className={`flex flex-col items-center ${theme === 'light' ? 'lightMode' : 'darkMode'}`}>
       <div className="w-3/5 flex flex-col items-center">
         <ModeSwitch />
         <Header />
@@ -24,8 +24,8 @@ function App() {
           <Profile />
           <Projects />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   )
 }

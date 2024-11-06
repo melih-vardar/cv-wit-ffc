@@ -29,7 +29,13 @@
         "dateOfBirth": "Doğum Tarihi",
         "city": "İkamet Şehri",
         "education": "Eğitim",
-        "preferredRole": "Tercih Edilen Rol"
+        "educationDetail": {
+            "firstPart": "Eskişehir Teknik Ünv. Malzeme Bilimi ve Mühendisliği",
+            "secondPart": "Lisans, 2022"
+        },
+        "preferredRole": "Tercih Edilen Rol",
+        "letsWork": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+        "personalBlog": "Kişisel Blog"
     },
     "en": {
         "buttonText": {
@@ -61,6 +67,12 @@
         "dateOfBirth": "Date of Birth",
         "city": "City",
         "education": "Education",
-        "preferredRole": "Preferred Role"
+        "educationDetail": {
+            "firstPart": "Eskişehir Technical Unv. Material Science and Engineering",
+            "secondPart": "Bachelor, 2022"
+        },
+        "preferredRole": "Preferred Role",
+        "letsWork": "Let’s work together on your next product.",
+        "personalBlog": "Personal Blog"
     }
 }

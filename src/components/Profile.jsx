@@ -24,8 +24,8 @@ function Profile() {
                         <div className="flex flex-col gap-4 font-normal font-Inter text-lg w-80">
                             <h3>31.07.1997</h3>
                             <h3>Eskişehir</h3>
-                            <h3>Eskişehir Teknik Ünv. Malzeme Bilimi ve Mühendisliği</h3>
-                            <h3>Lisans, 2022</h3>
+                            <h3>{translate("educationDetail").firstPart}</h3>
+                            <h3>{translate("educationDetail").secondPart}</h3>
                             <h3>Frontend, UI</h3>
                         </div>
                     </div>
