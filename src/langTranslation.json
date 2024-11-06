@@ -6,9 +6,30 @@
         },
         "skills": "Yetenekler",
         "projects": "Projeler",
+        "projectsTitle": {
+            "first": "Workintech",
+            "second": "Random Jokes",
+            "third": "Journey"
+        },
+        "projectsParagraph": {
+            "first": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "second": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "third": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
+        },
+        "viewSite": "Siteyi görüntüle",
         "hireMe": "Ekibe al",
         "heroh1": "Yaratıcı Düşünür Minimalizm Aşığı",
-        "heroh2": "Merhaba ben Melih. Ben full-stack bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir frontend ürünleri üretecek bir geliştirici arıyorsanız, tanışalım!"
+        "heroh2": "Merhaba ben Melih. Ben full-stack bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir frontend ürünleri üretecek bir geliştirici arıyorsanız, tanışalım!",
+        "profile": "Profil",
+        "aboutMe": "Hakkımda",
+        "aboutMeParagraph": {
+            "firstPart": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            "secondPart": " Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+        },
+        "dateOfBirth": "Doğum Tarihi",
+        "city": "İkamet Şehri",
+        "education": "Eğitim",
+        "preferredRole": "Tercih Edilen Rol"
     },
     "en": {
         "buttonText": {
@@ -17,8 +38,29 @@
         },
         "skills": "Skills",
         "projects": "Projects",
+        "projectsTitle": {
+            "first": "Workintech",
+            "second": "Random Jokes",
+            "third": "Journey"
+        },
+        "projectsParagraph": {
+            "first": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "second": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "third": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
+        },
+        "viewSite": "View Site",
         "hireMe": "Hire me",
         "heroh1": "Creative thinker Minimalism lover",
-        "heroh2": "Hi, I’m Melih. I’m a full-stack developer. If you are looking for a developer who to craft solid and scalable frontend products with great user experiences, let’s meet!"
+        "heroh2": "Hi, I’m Melih. I’m a full-stack developer. If you are looking for a developer who to craft solid and scalable frontend products with great user experiences, let’s meet!",
+        "profile": "Profile",
+        "aboutMe": "About Me",
+        "aboutMeParagraph": {
+            "firstPart": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            "secondPart": " Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+        },
+        "dateOfBirth": "Date of Birth",
+        "city": "City",
+        "education": "Education",
+        "preferredRole": "Preferred Role"
     }
 }

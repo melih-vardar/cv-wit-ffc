@@ -19,7 +19,7 @@ function Hero() {
                     <h1 className={`h-36 font-bold text-7xl font-Inter ${theme === "light" ? "text-[#1F2937]" : "text-[#AEBCCF]"}`}>{translate("heroh1")}</h1>
                 </div>
                 <div>
-                    <h2 className="font-normal text-lg text-[#6B7280] font-Inter">{translate("heroh2")}</h2>
+                    <h2 className={`font-normal text-lg font-Inter ${theme === "light" ? "text-[#6B7280]" : "text-[#FFFFFF]"}`}>{translate("heroh2")}</h2>
                 </div>
                 <div className="w-[29rem] h-[3.25rem] flex gap-3">
                     <button className={`border rounded-md px-6 font-Inter font-medium text-lg 
