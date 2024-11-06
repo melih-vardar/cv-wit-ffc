@@ -1,13 +1,19 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect } from 'react';
 import langTranslation from '../langTranslation.json'
+import useLocalStorage from '../hooks/useLocalStorage';
+
 
 export const LangContext = createContext();
 
 export const LangContextProvider = ({ children }) => {
-    const [lang, setLang] = useState('tr');
+    const [lang, setLang] = useLocalStorage('lang', 'tr');
 
     const toggleLang = () => {
-        setLang((prevLang) => (prevLang === 'tr' ? 'en' : 'tr'))
+        if (lang === 'tr') {
+            setLang('en');
+        } else {
+            setLang('tr');
+        }
     }
 
     const translate = (key) => langTranslation[lang][key] || key;
