@@ -10,7 +10,7 @@ function ModeSwitch() {
 
 
     return (
-        <div className="flex gap-3.5 mt-6 self-end">
+        <div className="flex gap-3.5 mt-6 sm:self-end">
 
             <label className="inline-flex items-center cursor-pointer">
                 <input

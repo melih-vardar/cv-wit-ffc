@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectCard = ({ project, translate }) => {
     return (
-        <div className="w-[300px] flex flex-col gap-[1.125rem]">
+        <div className="w-full sm:w-[300px] flex flex-col gap-[1.125rem]">
             <img src={project.img} alt={project.title} />
             <h2 className="font-Inter font-medium text-3xl text-[#433BCA] dark:text-[#B7AAFF]">
                 {project.title}

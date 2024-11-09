@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center bg-[#FFFFFF] text-black dark:bg-[#252128] dark:text-[#FFFFFF]">
-      <div className="w-3/5 flex flex-col items-center">
+      <div className="w-full sm:w-3/5 px-4 sm:px-0 flex flex-col items-center">
         <ModeSwitch />
         <Header />
         <Hero />

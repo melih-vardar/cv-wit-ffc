@@ -12,11 +12,11 @@ function Skills() {
     ];
 
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-10 sm:gap-8">
             <div>
-                <h1 className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF]">{translate("skills")}</h1>
+                <h1 className="font-Inter font-semibold text-center sm:text-start text-5xl text-[#1F2937] dark:text-[#AEBCCF]">{translate("skills")}</h1>
             </div>
-            <div className="flex gap-28">
+            <div className="flex flex-col gap-10 sm:flex-row sm:gap-28">
                 {sections.map((section, index) => (
                     <SkillsMapping key={index} title={section.title} description={section.description} />
                 ))}
