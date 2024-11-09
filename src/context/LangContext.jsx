@@ -42,9 +42,6 @@ export const LangContextProvider = ({ children }) => {
                     console.log('error', error);
                 })
         }
-        else {
-            console.warn('Language data not found for: ', lang)
-        }
     }, [lang])
 
     const translate = (key) => {

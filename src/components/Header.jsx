@@ -1,15 +1,12 @@
 import React, { useContext } from 'react'
-import { ThemeContext } from '../context/ThemeContext'
 import { LangContext } from '../context/LangContext';
 
 function Header() {
-
-    const { theme } = useContext(ThemeContext);
     const { translate } = useContext(LangContext);
 
     return (
         <div className=" mt-6 flex justify-between h-16 w-full">
-            <div className={`w-16 rounded-full flex justify-center items-center ${theme === "light" ? "bg-[#EEEBFF]" : "bg-specialBlue"}`}>
+            <div className="w-16 rounded-full flex justify-center items-center bg-[#EEEBFF] dark:bg-specialBlue">
                 <span className="font-Inter font-semibold text-2xl text-[#7B61FF] origin-center rotate-45">M</span>
             </div>
 
