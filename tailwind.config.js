@@ -1,3 +1,5 @@
+import filters from 'tailwindcss-filters';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
@@ -18,8 +20,6 @@ export default {
       }
     },
   },
-  plugins: [
-    require('tailwindcss-filters'),
-  ],
+  plugins: [filters],
 }
 

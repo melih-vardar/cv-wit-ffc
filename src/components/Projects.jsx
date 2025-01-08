@@ -30,11 +30,12 @@ function Projects() {
         border-t border-[#BAB2E7] pt-10 text-center sm:text-start">
                 {translate("projects")}
             </div>
-            <div className="flex flex-col sm:flex-row gap-10 sm:gap-28 ">
+            {/* <div className="flex flex-col sm:flex-row gap-10 sm:gap-28 ">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} translate={translate} />
                 ))}
-            </div>
+            </div> */}
+            <h1 className="font-Inter font-medium text-3xl text-[#433BCA] dark:text-[#B7AAFF]">Will be added soon.</h1>
         </div>
     )
 }

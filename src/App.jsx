@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div className="flex flex-col items-center bg-[#FFFFFF] text-black dark:bg-[#252128] dark:text-[#FFFFFF]">
-      <div className="w-full sm:w-3/5 px-4 sm:px-0 flex flex-col items-center">
+      <div className="flex-grow w-full sm:w-auto sm:max-w-5xl px-4 sm:px-0 flex flex-col items-center">
         <ModeSwitch />
         <Header />
         <Hero />
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 sm:max-w-5xl">
           <Skills />
           <Profile />
           <Projects />
