@@ -50,7 +50,7 @@ function ProjectCard({ title, description, githubUrl, homepage, language, stars,
                     <FaGithub />
                     GitHub
                 </motion.a>
-                {homepage && (
+                {homepage && stars > 0 && (
                     <motion.a
                         href={homepage}
                         target="_blank"
