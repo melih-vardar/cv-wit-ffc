@@ -20,7 +20,7 @@ function Skills() {
     ];
 
     return (
-        <div className="flex flex-col gap-10 sm:gap-8">
+        <div id="skills" className="flex flex-col gap-10 sm:gap-8">
             <div>
                 <h1 className="font-Inter font-semibold text-center sm:text-start text-5xl text-[#1F2937] dark:text-[#AEBCCF]">{translate("skills")}</h1>
             </div>

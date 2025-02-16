@@ -1,43 +1,73 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { LangContext } from '../context/LangContext';
 import ProjectCard from './subComponents/ProjectCard';
 
 function Projects() {
     const { translate } = useContext(LangContext);
-    const projects = [
-        {
-            img: "../../assets/project1.png",
-            title: translate("projectsTitle").first,
-            description: translate("projectsParagraph").first,
-            technologies: ["react", "redux", "axios"]
-        },
-        {
-            img: "../../assets/project2.png",
-            title: translate("projectsTitle").second,
-            description: translate("projectsParagraph").second,
-            technologies: ["react", "redux", "axios"]
-        },
-        {
-            img: "../../assets/project3.png",
-            title: translate("projectsTitle").third,
-            description: translate("projectsParagraph").third,
-            technologies: ["react", "redux", "axios"]
-        }
-    ];
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [showAll, setShowAll] = useState(false);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                const response = await fetch('https://api.github.com/users/melih-vardar/repos?sort=pushed&direction=desc&per_page=100');
+                const allProjects = await response.json();
+                
+                const sortedProjects = allProjects
+                    .sort((a, b) => b.stargazers_count - a.stargazers_count);
+                
+                setProjects(sortedProjects);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
+    const displayedProjects = showAll 
+        ? projects 
+        : projects.filter(project => project.stargazers_count > 0);
+
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center min-h-[200px]">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#3730A3]"></div>
+            </div>
+        );
+    }
+
     return (
-        <div className="flex flex-col gap-10">
-            <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF]
-        border-t border-[#BAB2E7] pt-10 text-center sm:text-start">
+        <div id="projects" className="flex flex-col gap-10">
+            <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF] border-t border-[#BAB2E7] pt-10 text-center sm:text-start">
                 {translate("projects")}
             </div>
-            {/* <div className="flex flex-col sm:flex-row gap-10 sm:gap-28 ">
-                {projects.map((project, index) => (
-                    <ProjectCard key={index} project={project} translate={translate} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {displayedProjects.map((project) => (
+                    <ProjectCard 
+                        key={project.id}
+                        title={project.name}
+                        description={project.description || "No description available"}
+                        githubUrl={project.html_url}
+                        homepage={project.homepage}
+                        language={project.language}
+                        stars={project.stargazers_count}
+                    />
                 ))}
-            </div> */}
-            <h1 className="font-Inter font-medium text-3xl text-[#433BCA] dark:text-[#B7AAFF]">Will be added soon.</h1>
+            </div>
+            {!showAll && projects.some(project => project.stargazers_count === 0) && (
+                <button 
+                    onClick={() => setShowAll(true)}
+                    className="mx-auto px-6 py-2 border border-[#3730A3] rounded-md text-[#3730A3] dark:text-[#B7AAFF] dark:border-[#B7AAFF] font-Inter font-medium hover:bg-[#3730A3] hover:text-[#FFFFFF] dark:hover:bg-[#B7AAFF] dark:hover:text-[#1F2937] transition-colors"
+                >
+                    {translate("readMore")}
+                </button>
+            )}
         </div>
-    )
+    );
 }
 
 export default Projects

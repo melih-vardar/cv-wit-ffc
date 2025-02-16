@@ -18,20 +18,37 @@ function Hero() {
                 <div>
                     <h2 className="text-center sm:text-left font-normal text-lg font-Inter text-[#6B7280] dark:text-[#FFFFFF]">{translate("heroh2")}</h2>
                 </div>
-                <div className="w-full sm:w-[29rem] h-[3.25rem] flex gap-3">
-                    <button className="border rounded-md px-6 font-Inter font-medium text-lg 
-                    bg-[#3730A3] text-[#FFFFFF] border-[#3730A3] dark:bg-[#E1E1FF] dark:text-[#000000] dark:border-[#E1E1FF]">
-                        {translate("hireMe")}</button>
-                    <button className="border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
-                    flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-[#E1E1FF]">
+                <div className="w-full sm:w-[29rem] h-[3.25rem] flex gap-3 justify-center">
+                    <a 
+                        href="mailto:mvardar97@gmail.com"
+                        className="border rounded-md px-6 font-Inter font-medium text-lg 
+                        bg-[#3730A3] text-[#FFFFFF] border-[#3730A3] dark:bg-[#E1E1FF] dark:text-[#000000] dark:border-[#E1E1FF]
+                        hover:opacity-90 flex items-center"
+                    >
+                        {translate("contact")}
+                    </a>
+                    <a 
+                        href="https://github.com/melih-vardar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
+                        flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-[#E1E1FF]
+                        hover:opacity-90"
+                    >
                         <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark" src="../../assets/github-mark.svg" />
                         <p className="bg-[#FFFFFF] text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF]">Github</p>
-                    </button>
-                    <button className="border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
-                    flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-[#E1E1FF]">
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/melih-vardar"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border rounded-md px-6 text-[#3730A3] font-Inter font-medium text-lg 
+                        flex justify-center items-center gap-1 bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-[#E1E1FF]
+                        hover:opacity-90"
+                    >
                         <img className="w-6 h-6 filter-logo-filter-light dark:filter-logo-filter-dark" src="../../assets/LI-In-Bug.svg" />
                         <p className="bg-[#FFFFFF] text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF]">Linkedin</p>
-                    </button>
+                    </a>
                 </div>
             </div>
             <img className="w-4/5 sm:w-auto sm:h-4/5 rounded-2xl drop-shadow-2xl self-center order-first sm:order-last" src="../../assets/cv-photo2.jpg" />

@@ -17,7 +17,7 @@
             "third": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
         },
         "viewSite": "Siteyi görüntüle",
-        "hireMe": "Ekibe al",
+        "hireMe": "İletişim",
         "heroh1": "Yaratıcı Düşünür Sadelik Aşığı",
         "heroh2": "Merhaba ben Melih. Full-stack bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir frontend ürünleri üretecek bir geliştirici arıyorsanız, tanışalım!",
         "profile": "Profil",
@@ -35,7 +35,9 @@
         },
         "preferredRole": "Tercih Edilen Rol",
         "letsWork": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
-        "personalBlog": "Kişisel Blog"
+        "personalBlog": "Kişisel Blog",
+        "readMore": "Daha Fazla Göster",
+        "contact": "İletişim"
     },
     "en": {
         "buttonText": {
@@ -55,13 +57,13 @@
             "third": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible."
         },
         "viewSite": "View Site",
-        "hireMe": "Hire me",
+        "hireMe": "Contact",
         "heroh1": "Creative thinker Simplicity lover",
-        "heroh2": "Hi, I’m Melih. I’m a full-stack developer. If you are looking for a developer who to craft solid and scalable frontend products with great user experiences, let’s meet!",
+        "heroh2": "Hi, I'm Melih. I'm a full-stack developer. If you are looking for a developer who to craft solid and scalable frontend products with great user experiences, let's meet!",
         "profile": "Profile",
         "aboutMe": "About Me",
         "aboutMeParagraph": {
-            "firstPart": "I’m a passionate full-stack developer with a strong focus on problem-solving and writing clean, maintainable code. I’m proficient in JavaScript, React.js, Java, SQL, and more, and have developed various projects using these technologies. My curiosity drives me to continuously explore new technologies and tackle challenging projects, especially those that push me to learn new features of the languages I work with.",
+            "firstPart": "I'm a passionate full-stack developer with a strong focus on problem-solving and writing clean, maintainable code. I'm proficient in JavaScript, React.js, Java, SQL, and more, and have developed various projects using these technologies. My curiosity drives me to continuously explore new technologies and tackle challenging projects, especially those that push me to learn new features of the languages I work with.",
             "secondPart": "After graduating with a degree in Materials Science and Engineering, I worked for 1.5 years as a production engineer at Haier Europe. During this time, I collaborated with international teams, which significantly enhanced my communication and teamwork skills. This experience, coupled with my strong technical foundation, has shaped my ability to effectively work in diverse environments and tackle complex challenges."
         },
         "dateOfBirth": "Date of Birth",
@@ -72,7 +74,9 @@
             "secondPart": "Bachelor, 2022"
         },
         "preferredRole": "Preferred Role",
-        "letsWork": "Let’s work together on your next product.",
-        "personalBlog": "Personal Blog"
+        "letsWork": "Let's work together on your next product.",
+        "personalBlog": "Personal Blog",
+        "readMore": "Show More",
+        "contact": "Contact"
     }
 }

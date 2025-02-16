@@ -4,7 +4,7 @@ import { LangContext } from '../context/LangContext';
 function Profile() {
     const { translate } = useContext(LangContext);
     return (
-        <div className="flex flex-col gap-10">
+        <div id="profile" className="flex flex-col gap-10">
             <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF] border-t border-[#BAB2E7] pt-10 text-center sm:text-start">
                 {translate("profile")}
             </div>

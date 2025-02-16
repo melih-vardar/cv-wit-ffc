@@ -1,39 +1,56 @@
-import React from 'react';
+import React, { useContext } from 'react'
+import { LangContext } from '../../context/LangContext'
+import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa'
 
-const ProjectCard = ({ project, translate }) => {
+function ProjectCard({ title, description, githubUrl, homepage, language, stars }) {
+    const { translate } = useContext(LangContext)
+
     return (
-        <div className="w-full sm:w-[300px] flex flex-col gap-[1.125rem]">
-            <img src={project.img} alt={project.title} />
-            <h2 className="font-Inter font-medium text-3xl text-[#433BCA] dark:text-[#B7AAFF]">
-                {project.title}
-            </h2>
-            <h3 className="font-Inter font-normal text-sm text-[#6B7280] dark:text-[#FFFFFF]">
-                {project.description}
-            </h3>
-            <div className="flex gap-1.5">
-                {project.technologies.map((tech, index) => (
-                    <div
-                        key={index}
-                        className="h-[27px] w-[68px] border rounded font-Inter font-medium text-sm flex justify-center items-center bg-[#FFFFFF] border-[#3730A3] dark:bg-[#383838] dark:border-[#8F88FF]"
-                    >
-                        <p className="text-[#3730A3] dark:text-[#8F88FF]">{tech}</p>
-                    </div>
-                ))}
+        <div className="flex flex-col gap-4 p-6 bg-white dark:bg-[#1F2937] rounded-lg shadow-lg">
+            <div className="flex justify-between items-start">
+                <h3 className="font-Inter font-medium text-xl text-[#1F2937] dark:text-[#AEBCCF]">
+                    {title}
+                </h3>
+                <div className="flex items-center gap-2">
+                    <FaStar className="text-yellow-400" />
+                    <span className="text-sm">{stars}</span>
+                </div>
             </div>
-            <div className="flex justify-between">
-                <button
-                    className="font-Inter font-medium text-base underline text-[#3730A3] dark:text-[#E1E1FF]"
+            
+            <p className="font-Inter text-[#6B7280] dark:text-[#FFFFFF] text-base">
+                {description}
+            </p>
+
+            {language && (
+                <div className="text-sm text-[#6B7280] dark:text-[#AEBCCF]">
+                    {language}
+                </div>
+            )}
+
+            <div className="flex gap-4 mt-auto">
+                <a
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#3730A3] dark:text-[#B7AAFF] hover:underline"
                 >
-                    Github
-                </button>
-                <button
-                    className="font-Inter font-medium text-base underline text-[#3730A3] dark:text-[#E1E1FF]"
-                >
-                    {translate("viewSite")}
-                </button>
+                    <FaGithub />
+                    GitHub
+                </a>
+                {homepage && (
+                    <a
+                        href={homepage}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-[#3730A3] dark:text-[#B7AAFF] hover:underline"
+                    >
+                        <FaExternalLinkAlt />
+                        {translate("viewSite")}
+                    </a>
+                )}
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ProjectCard;
+export default ProjectCard

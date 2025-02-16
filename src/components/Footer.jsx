@@ -11,12 +11,31 @@ function Footer() {
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:w-3/4">
                 <div className="flex gap-0.5 justify-center sm:justify-start">
                     <h2>👉</h2>
-                    <h2 className="font-Inter font-medium text-xl underline text-[#AF0C48] dark:text-specialWhite">mvardar97@gmail.com</h2>
+                    <a 
+                        href="mailto:mvardar97@gmail.com"
+                        className="font-Inter font-medium text-xl underline text-[#AF0C48] dark:text-specialWhite hover:opacity-80"
+                    >
+                        mvardar97@gmail.com
+                    </a>
                 </div>
                 <div className="flex gap-5 justify-center sm:justify-start">
                     <button className="font-Inter font-medium text-lg text-[#0A0A14] dark:text-[#E1E1FF]">{translate("personalBlog")}</button>
-                    <button className="font-Inter font-medium text-lg text-[#00AB6B] dark:text-[#17D18B]">Github</button>
-                    <button className="font-Inter font-medium text-lg text-[#0077B5] dark:text-[#0BA6F6]">Linkedin</button>
+                    <a 
+                        href="https://github.com/melih-vardar" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="font-Inter font-medium text-lg text-[#00AB6B] dark:text-[#17D18B] hover:opacity-80"
+                    >
+                        Github
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/in/melih-vardar" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="font-Inter font-medium text-lg text-[#0077B5] dark:text-[#0BA6F6] hover:opacity-80"
+                    >
+                        Linkedin
+                    </a>
                 </div>
             </div>
         </div>
