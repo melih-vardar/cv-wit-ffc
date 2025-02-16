@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { LangContext } from '../context/LangContext';
 import ProjectCard from './subComponents/ProjectCard';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Projects() {
     const { translate } = useContext(LangContext);
@@ -45,26 +46,33 @@ function Projects() {
             <div className="font-Inter font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF] border-t border-[#BAB2E7] pt-10 text-center sm:text-start">
                 {translate("projects")}
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {displayedProjects.map((project) => (
-                    <ProjectCard 
-                        key={project.id}
-                        title={project.name}
-                        description={project.description || "No description available"}
-                        githubUrl={project.html_url}
-                        homepage={project.homepage}
-                        language={project.language}
-                        stars={project.stargazers_count}
-                    />
-                ))}
-            </div>
+            <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+                <AnimatePresence>
+                    {displayedProjects.map((project, index) => (
+                        <ProjectCard 
+                            key={project.id}
+                            title={project.name}
+                            description={project.description || "No description available"}
+                            githubUrl={project.html_url}
+                            homepage={project.homepage}
+                            language={project.language}
+                            stars={project.stargazers_count}
+                            index={index}
+                        />
+                    ))}
+                </AnimatePresence>
+            </motion.div>
             {!showAll && projects.some(project => project.stargazers_count === 0) && (
-                <button 
+                <motion.button 
                     onClick={() => setShowAll(true)}
                     className="mx-auto px-6 py-2 border border-[#3730A3] rounded-md text-[#3730A3] dark:text-[#B7AAFF] dark:border-[#B7AAFF] font-Inter font-medium hover:bg-[#3730A3] hover:text-[#FFFFFF] dark:hover:bg-[#B7AAFF] dark:hover:text-[#1F2937] transition-colors"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                 >
                     {translate("readMore")}
-                </button>
+                </motion.button>
             )}
         </div>
     );
