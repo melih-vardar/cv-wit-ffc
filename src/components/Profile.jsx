@@ -25,7 +25,7 @@ function Profile() {
                         </div>
                         
                         <h3 className="font-semibold font-Inter text-lg sm:text-nowrap text-start">{translate("preferredRole")}</h3>
-                        <h3 className="font-normal font-Inter text-lg text-start">Frontend, UI</h3>
+                        <h3 className="font-normal font-Inter text-lg text-start">Backend / Frontend</h3>
                     </div>
                 </div>
                 <div className="flex flex-col gap-4 sm:gap-5 sm:max-w-[600px]">
