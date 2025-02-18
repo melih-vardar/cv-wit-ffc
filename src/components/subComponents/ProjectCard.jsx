@@ -22,10 +22,10 @@ function ProjectCard({ title, description, githubUrl, homepage, language, stars,
                 <h3 className="font-Inter font-medium text-xl text-[#1F2937] dark:text-[#AEBCCF]">
                     {title}
                 </h3>
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                     <FaStar className="text-yellow-400" />
                     <span className="text-sm">{stars}</span>
-                </div>
+                </div> */}
             </div>
             
             {/* <p className="font-Inter text-[#6B7280] dark:text-[#FFFFFF] text-base">
