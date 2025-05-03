@@ -33,10 +33,10 @@ export const LangContextProvider = ({ children }) => {
         const currentLangData = langTranslation[lang]
         if (currentLangData) {
             axios
-                .post('https://reqres.in/api/workintech', currentLangData)
+                .post('https://httpbin.org/post', currentLangData)
                 .then((res) => {
                     console.log('data', res.data)
-                    setCurrentContent(res.data)
+                    setCurrentContent(JSON.parse(res.data.data))
                 })
                 .catch((error) => {
                     console.log('error', error);
